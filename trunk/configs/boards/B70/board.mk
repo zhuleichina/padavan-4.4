@@ -4,6 +4,6 @@
 # HC5962   # HC5962          # MT7621  #
 ##################################################################
 
-CFLAGS += -DBOARD_
+CFLAGS += -DBOARD_B70
 BOARD_NUM_USB_PORTS=2
 CONFIG_BOARD_RAM_SIZE=256
