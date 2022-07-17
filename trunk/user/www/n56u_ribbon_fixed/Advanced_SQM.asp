@@ -158,7 +158,7 @@ function getHash(){
                                         <div id="tabMenu" class="submenuBlock"></div>
                                         <div class="alert alert-info" style="margin: 10px;">
                           注意:SQM会自动设置相应的HWNAT规则，请勿自行调整WAN页面的HWNAT选项造成流控失效</br>
-				因7621性能所限,大于500M宽带谨慎开启QOS！</br>
+				
             通过SQM_QoS您可以：对指定接口流量整形,例如自定义5G访客网络。其他接口如5G主接口不会受到影响。</br>
                                        访客网络接口名称视机型而定，5G访客：ra1(或rai1） 2.4G访客rax1(或ra1)。
                                         </div>
