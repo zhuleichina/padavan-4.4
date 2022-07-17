@@ -591,17 +591,6 @@ menuL1_title = new Array("", "<#menu1#>", "", "<#menu2#>", "<#menu6#>", "<#menu4
 menuL1_link = new Array("", "index.asp", "", "vpnsrv.asp", "vpncli.asp", "Main_TrafficMonitor_realtime.asp", "Advanced_System_Info.asp", "as.asp");
 menuL1_icon = new Array("", "icon-home", "icon-hdd", "icon-retweet", "icon-globe", "icon-tasks", "icon-random", "icon-wrench");
 
-if (!found_app_vpnsvr()) {
-	menuL1_title[3] = '';
-	menuL1_link[3] = '';
-	menuL1_icon[3] = '';
-}
-if (!found_app_vpncli()) {
-	menuL1_title[4] = '';
-	menuL1_link[4] = '';
-	menuL1_icon[4] = '';
-}
-
 function show_menu(L1, L2, L3){
 	var i;
 	var num_ephy = support_num_ephy();
@@ -626,6 +615,10 @@ function show_menu(L1, L2, L3){
 		menuL2_title[4] = "";
 		menuL2_link[5] = "";  //remove Firewall
 		menuL2_title[5] = "";
+		menuL1_link[3] = "";  //remove VPN svr
+		menuL1_title[3] = "";
+		menuL1_link[4] = "";  //remove VPN cli
+		menuL1_title[4] = "";
 		
 		if (lan_proto == '1'){
 			tabtitle[2].splice(2,1);
