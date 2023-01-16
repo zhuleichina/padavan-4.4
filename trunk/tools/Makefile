@@ -32,7 +32,7 @@ go_build:
 ifeq ($(GITHUB_ACTION),n)
 	mkdir -p $(THISDIR)/go
 	( if [ ! -f $(THISDIR)/go/go1.17.6.linux-amd64.tar.gz ]; then \
-	curl --create-dirs -L https://gomirrors.org/dl/go/go1.17.6.linux-amd64.tar.gz -o $(THISDIR)/go/go1.17.6.linux-amd64.tar.gz ; \
+	curl --create-dirs -L https://dl.google.com/go/go1.17.6.linux-amd64.tar.gz -o $(THISDIR)/go/go1.17.6.linux-amd64.tar.gz ; \
 	fi )
 	( if [ ! -d $(THISDIR)/go/go ]; then \
 	tar zxfv $(THISDIR)/go/go1.17.6.linux-amd64.tar.gz -C go ; \
